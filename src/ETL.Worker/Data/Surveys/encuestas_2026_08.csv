@@ -1,0 +1,6 @@
+SurveyId,CustomerId,SatisfactionScore,Comments,ResponseDate
+SUR-1001,CUST-045,5,"Excelente atención y entrega rápida",2026-08-01
+SUR-1002,CUST-102,3,"El producto llegó con retraso",2026-08-01
+SUR-1003,CUST-078,4,,2026-08-02
+SUR-1004,CUST-019,2,"Empaque dañado",2026-08-02
+SUR-1005,CUST-133,5,"Muy satisfecho con la compra",2026-08-03

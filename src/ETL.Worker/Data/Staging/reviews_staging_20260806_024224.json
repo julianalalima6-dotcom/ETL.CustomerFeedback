@@ -1,0 +1,26 @@
+[
+  {
+    "ReviewId": 1,
+    "ProductId": 101,
+    "CustomerId": "CUST-045",
+    "Rating": 5,
+    "ReviewText": "Excelente calidad",
+    "CreatedAt": "2026-08-06T02:38:43.913"
+  },
+  {
+    "ReviewId": 2,
+    "ProductId": 102,
+    "CustomerId": "CUST-102",
+    "Rating": 2,
+    "ReviewText": "Lleg\u00F3 da\u00F1ado",
+    "CreatedAt": "2026-08-06T02:38:43.913"
+  },
+  {
+    "ReviewId": 3,
+    "ProductId": 103,
+    "CustomerId": "CUST-078",
+    "Rating": 4,
+    "ReviewText": "Buena relaci\u00F3n precio-calidad",
+    "CreatedAt": "2026-08-06T02:38:43.913"
+  }
+]
