@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Polly;
 using Polly.Extensions.Http;
 
+
+
 namespace ETL.Infrastructure;
 
 /// <summary>
@@ -33,6 +35,11 @@ public static class DependencyInjection
         services.AddScoped<IDataLoader<SurveyResponse>, StagingDataLoader<SurveyResponse>>();
         services.AddScoped<IDataLoader<ProductReview>, StagingDataLoader<ProductReview>>();
         services.AddScoped<IDataLoader<CustomerComment>, StagingDataLoader<CustomerComment>>();
+
+        services.AddScoped<IDimensionLoader<DimCliente>, DimClienteLoader>();
+        services.AddScoped<IDimensionLoader<DimCategoria>, DimCategoriaLoader>();
+        services.AddScoped<IDimensionLoader<DimProducto>, DimProductoLoader>();
+        services.AddScoped<DimensionLoadService>();
 
         services.AddScoped<ExtractionOrchestrator>();
 

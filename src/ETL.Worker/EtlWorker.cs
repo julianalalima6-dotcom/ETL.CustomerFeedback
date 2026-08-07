@@ -1,7 +1,7 @@
 using ETL.Application.Configuration;
 using ETL.Application.Services;
 using Microsoft.Extensions.Options;
-
+using ETL.Infrastructure.Persistence;
 namespace ETL.Worker;
 
 /// <summary>
@@ -40,6 +40,9 @@ public sealed class EtlWorker : BackgroundService
             try
             {
                 await orchestrator.RunAsync(stoppingToken);
+
+                var dimensionLoadService = scope.ServiceProvider.GetRequiredService<DimensionLoadService>();
+                await dimensionLoadService.RunAsync(stoppingToken);
             }
             catch (Exception ex)
             {
