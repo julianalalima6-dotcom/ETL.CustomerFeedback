@@ -1,0 +1,42 @@
+[
+  {
+    "SurveyId": "SUR-1001",
+    "CustomerId": "CUST-045",
+    "SatisfactionScore": 5,
+    "Comments": "Excelente atenci\u00F3n y entrega r\u00E1pida",
+    "ResponseDate": "2026-08-01T00:00:00",
+    "SourceFile": "encuestas_2026_08.csv"
+  },
+  {
+    "SurveyId": "SUR-1002",
+    "CustomerId": "CUST-102",
+    "SatisfactionScore": 3,
+    "Comments": "El producto lleg\u00F3 con retraso",
+    "ResponseDate": "2026-08-01T00:00:00",
+    "SourceFile": "encuestas_2026_08.csv"
+  },
+  {
+    "SurveyId": "SUR-1003",
+    "CustomerId": "CUST-078",
+    "SatisfactionScore": 4,
+    "Comments": "",
+    "ResponseDate": "2026-08-02T00:00:00",
+    "SourceFile": "encuestas_2026_08.csv"
+  },
+  {
+    "SurveyId": "SUR-1004",
+    "CustomerId": "CUST-019",
+    "SatisfactionScore": 2,
+    "Comments": "Empaque da\u00F1ado",
+    "ResponseDate": "2026-08-02T00:00:00",
+    "SourceFile": "encuestas_2026_08.csv"
+  },
+  {
+    "SurveyId": "SUR-1005",
+    "CustomerId": "CUST-133",
+    "SatisfactionScore": 5,
+    "Comments": "Muy satisfecho con la compra",
+    "ResponseDate": "2026-08-03T00:00:00",
+    "SourceFile": "encuestas_2026_08.csv"
+  }
+]

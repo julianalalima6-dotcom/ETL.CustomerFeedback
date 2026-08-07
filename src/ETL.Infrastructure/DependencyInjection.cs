@@ -9,6 +9,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Polly;
 using Polly.Extensions.Http;
 
+
+
 namespace ETL.Infrastructure;
 
 /// <summary>
@@ -34,7 +36,18 @@ public static class DependencyInjection
         services.AddScoped<IDataLoader<ProductReview>, StagingDataLoader<ProductReview>>();
         services.AddScoped<IDataLoader<CustomerComment>, StagingDataLoader<CustomerComment>>();
 
+        services.AddScoped<IDimensionLoader<DimCliente>, DimClienteLoader>();
+        services.AddScoped<IDimensionLoader<DimCategoria>, DimCategoriaLoader>();
+        services.AddScoped<IDimensionLoader<DimProducto>, DimProductoLoader>();
+        services.AddScoped<DimensionLoadService>();
+
+        services.AddScoped<IDimensionLoader<DimFecha>, DimFechaLoader>();
+        services.AddScoped<FactVentaLoader>();
+        services.AddScoped<FactLoadService>();
+
         services.AddScoped<ExtractionOrchestrator>();
+
+
 
         // HttpClient nombrado para el ApiExtractor, con política de reintentos
         // (Polly) con backoff exponencial: 3 intentos ante errores 5xx, 408 o
